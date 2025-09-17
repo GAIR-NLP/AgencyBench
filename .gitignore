@@ -1,5 +1,7 @@
 .env
 .claude
+.DS_Store
+AgencyBench/.DS_Store
 bench.txt
 category.txt
 AgencyBench/task3/workspace
