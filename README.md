@@ -16,7 +16,7 @@
 
 AgencyBench is a comprehensive benchmark designed to evaluate the agentic intelligence capabilities of Large Language Models (LLMs). This benchmark tests LLMs across diverse domains and complexity levels, measuring their ability to function as autonomous agents capable of planning, executing, and adapting in complex multi-step scenarios.
 
-## 📰 Recent News
+## 🔥 Recent News
 
 - **[2025/09]** 🎉 AgencyBench is released! 49 challenging subtasks across 10 domains
 - **[2025/09]** 📊 Benchmark evaluation framework and baseline results coming soon
@@ -136,15 +136,14 @@ These metrics collectively provide a comprehensive assessment framework that eva
 
 ### 🥇 Official Results (R=3)
 
-| **Model** | **FTFC** | **RC** | **SR** |
-|-----------|----------|--------|--------|
-| 🥇 **anthropic/claude-sonnet-4** | **0.730** | **0.752** | **0.741** |
-| 🥈 **gpt-5** | 0.561 | 0.594 | 0.628 |
-| 🥉 **GLM 4.5 sft** | 0.717 | 0.742 | 0.746 |
-| **GLM 4.5** | 0.378 | 0.500 | 0.474 |
-| **qwen/qwen3-235b-a22b-2507** | 0.230 | 0.282 | 0.313 |
-| **moonshotai/kimi-k2(0711)** | 0.207 | 0.251 | 0.266 |
-| **deepseek/deepseek-chat-v3.1** | 0.106 | 0.119 | 0.133 |
+| **Organization** | **Model** | **FTFC** | **RC** | **SR** |
+|------------------|-----------|----------|--------|--------|
+|  **Anthropic** | 🥇 **claude-sonnet-4** | **0.730** | **0.752** | **0.741** |
+|  **OpenAI** | 🥈 **gpt-5** | 0.561 | 0.594 | 0.628 |
+|  **Zhipu AI** | 🥉 **GLM 4.5** | 0.378 | 0.500 | 0.474 |
+|  **Qwen** | **qwen3-235b-a22b-2507** | 0.230 | 0.282 | 0.313 |
+|  **MoonShot** | **kimi-k2(0711)** | 0.207 | 0.251 | 0.266 |
+|  **DeepSeek** | **deepseek-chat-v3.1** | 0.106 | 0.119 | 0.133 |
 
 > 🏅 **Claude Sonnet-4** achieves state-of-the-art performance across all metrics, demonstrating superior agentic intelligence capabilities.
 
