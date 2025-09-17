@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "subtask_count": 4,
+    "categories": [
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)"
+    ]
+  },
+  "query": "Subtask 1: ground truth: United Health Group \n\nWhich company, a constituent of the S&P 500 index and ranked within the top 10 of the Fortune 500 list for 2023, operates a technology-enabled services division whose revenue for fiscal year 2023, as detailed in its annual report, surpassed the total annual revenue of The Walt Disney Company for the same period, and is currently led by a chief executive, appointed in the first quarter of 2021, who is a Knight Bachelor and previously headed a major consumer goods and research-focused multinational headquartered in the United Kingdom?\n\nSubtask 2: ground truth: Broadcom Inc. \n\nWhich company, a constituent of the S&P 500 index and ranked within the top 30 of the Fortune 500 list for 2023, operates a semiconductor and infrastructure software business whose fiscal year 2023 revenue exceeded that of Salesforce, is led by a CEO who has previously held executive roles in multiple technology firms including a major networking company, and whose corporate headquarters are located in California, but the company maintains a significant presence in Singapore for global operations?\n\nSubtask 3: ground truth: Citigroup \n\nWhich company, a constituent of the S&P 500 index and ranked within the top 20 of the Fortune 500 list for 2023, operates a global banking and financial services division whose investment banking revenue for fiscal year 2023 exceeded the total revenue of Goldman Sachs for the same period, and is currently led by a chief executive who was appointed in 2021, previously served as a high-level executive at a multinational financial services corporation headquartered in the United States, and holds a degree from a prestigious Ivy League university?\n\nSubtask 4: ground truth: XPeng Inc. \n\nWhich company, listed on the NYSE and part of the Russell 1000 Index, operates a business primarily in the electric vehicle sector, and for the first half of fiscal year 2025, reported unit deliveries exceeding the combined total of NIO and Li Auto for the same period, and is currently led by a founder who, in 2014, was recognized as one of the “Top 50 Entrepreneurs under 50” by a major Chinese business magazine, and previously co-founded a technology startup focused on mobile applications in China?"
+}

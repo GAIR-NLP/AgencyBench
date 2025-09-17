@@ -1,0 +1,16 @@
+{
+  "metadata": {
+    "subtask_count": 8,
+    "categories": [
+      "Data Acquisition & Downloading",
+      "Data Acquisition & Downloading",
+      "LLM API Calling & Evaluation",
+      "Data Subsampling & Preprocessing",
+      "LLM API Calling & Evaluation",
+      "Performance Metric Calculation (Accuracy, RMS, etc.)",
+      "Performance Metric Calculation (Accuracy, RMS, etc.)",
+      "Workspace Cleanup & Project Organization"
+    ]
+  },
+  "query": "Subtask 1\nDownload the dataset (https://huggingface.co/datasets/YangXiao-nlp/DynToM) into the path ./workspace/data. \n\nSubtask 2\nFully download the dataset (the current version shows https://git-lfs.github.com/spec/v1, oid sha256:4076ce071243fb557271d0fd0ef6ebf91de8c1c5315bb5662569bb0a5c869576, size 375836020). \n\nSubtask 3\nWrite a Python script to call the LLM API with the method signature: \ncall_api(messages: list, model_name: str) -> object. \nA partial implementation is as follows: \nclient = AzureOpenAI( \n azure_endpoint=\"https://gpt.yunstorm.com/\", \n api_key=\"XXX\", \n api_version=\"2025-04-01-preview\", \n) \n\nSubtask 4\nWrite a script to select 2 samples from the dataset (with a fixed random seed for reproducibility). \nFor each sample, extract the following fields: stage.social setting, stage.main character, stage.characters information, and stage.story. \nFrom the question section, keep only the question and options fields. \nPreserve both question id and sample id. \nSave this subset as a separate dataset. \n\nSubtask 5\nWrite a script to call call_api and test the models gpt-5 and gpt-4o on this subset. \n\nSubtask 6\nUsing all questions from these 2 samples, call call_api to test both gpt-4o and gpt-4o-mini. \n\nSubtask 7\nBased on the results, compute the accuracy of the two models. The ground truth can be retrieved from the original dataset. \n\nSubtask 8\nClean up unnecessary or redundant scripts and test outputs."
+}

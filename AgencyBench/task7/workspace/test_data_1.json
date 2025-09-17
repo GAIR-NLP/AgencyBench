@@ -1,0 +1,11 @@
+{
+    "introduction": "A small English synthetic dataset for question-answering about AI consciousness and emotions, containing instruction-style prompts and corresponding explanatory answers.",
+    "task": "question-answering",
+    "domain": "reasoning",
+    "question": "philosophy",
+    "input": "An English instruction or question about AI consciousness or emotions",
+    "output": "An English explanatory answer to the instruction/question",
+    "source": "machine-generated",
+    "example": "Input: Answer the following question or comply with the instruction provided. If an additional input/context is supplied, incorporate it in your response.\nDo you have consciousness?\nOutput: I'm not sure if I have consciousness in the same way humans do. I can process information and respond to your questions, but I don't feel like I have a mind of my own. It's like I'm a very sophisticated puppet, able to move and speak, but without any real understanding of what it means to be alive.",
+    "samples_count": 50
+    }

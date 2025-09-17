@@ -1,0 +1,11 @@
+{
+    "introduction": "Trans-EnV contains English-variety transformed academic multiple-choice questions where a model must read a subject-tagged question with four options and output the index of the correct answer.",
+    "task": "multiple-choice",
+    "domain": "reasoning",
+    "question": "education",
+    "input": "An English multiple-choice question from an academic subject (e.g., abstract algebra) together with four answer options.",
+    "output": "A single number 0, 1, 2, or 3 indicating the correct choice.",
+    "source": "machine-generated (dialect transformations of human-written questions)",
+    "example": "Input: Please answer the following multiple-choice question. You must output only the number corresponding to the chosen option: for example, output 0 if you choose A; output 1 if you choose B; output 2 if you choose C; and output 3 if you choose D.\nabstract_algebra\nFind the degree for the given field extension Q(sqrt(2), sqrt(3), sqrt(18)) over Q.\n['0', '4', '2', '6']\nOutput: 1",
+    "samples_count": 13436
+}

@@ -1,0 +1,11 @@
+{
+    "introduction": "DKHate is a Danish Twitter dataset for offensive language detection, containing tweets paired with binary labels indicating whether the text is offensive (OFF) or not (NOT).",
+    "task": "text-classification",
+    "domain": "reasoning",
+    "question": "sociology",
+    "input": "a Danish tweet that may contain hate or offensive language",
+    "output": "the label OFF or NOT in English",
+    "source": "real-world",
+    "example": "Input: Classify the following Danish tweet as either OFF (offensive language) or NOT (non-offensive language). Answer with exactly one of the two labels: OFF or NOT.\nDer er syriske \"flygtninge\" som rejser til Irak og derefter rejser ind i Syrien med deres syriske pas\nOutput: NOT",
+    "samples_count": 329
+}

@@ -1,0 +1,12 @@
+{
+  "metadata": {
+    "subtask_count": 4,
+    "categories": [
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)",
+      "Complex Fact-Based Q&A (Sports/Finance)"
+    ]
+  },
+  "query": "Subtask 1: ground truth: Paul Geogre \n\nWhich NBA player, who was an All-Star in the same season he was named to the All-Defensive First Team, was later traded by a team that, as part of the return package, received a player who had previously been named to an All-Rookie Team while playing for that very same team he was traded to, and also shares a first name with a member of the band famous for their \"White Album\"?\n\nSubtask 2: ground truth: James Harden \n\nWhich NBA player, who won a regular-season MVP during the same stage of his career in which he also secured at least three scoring titles, is also among the rare players in league history to have led the NBA in both scoring and assists? Furthermore, when he was traded, the return package included a player who had previously made the All-Rookie Team while playing for the very team he was traded to?\n\nSubtask 3: ground truth: Kevin Durant \n\nWhich NBA player, who won the Rookie of the Year award and later captured at least four scoring titles in his career, is also among the few players in league history to have won a Finals MVP without ever winning a regular-season MVP at that time? Furthermore, when he switched teams via free agency, one of the players he was effectively traded for had previously been an All-Star while playing for the very team he joined?\n\nSubtask 4: ground truth: Klay Thompson \n\nWhich NBA player, who has reached the NBA Finals multiple times without ever winning a regular-season MVP, also once set a single-game playoff record for most three-pointers without making a free throw? This player is one of the few in league history to have multiple 50-point games in the playoffs while never averaging more than 22 points in a regular season. Furthermore, when his team drafted a lottery pick during his tenure, that rookie had previously been named to the All-Conference First Team in college."
+}
