@@ -3,7 +3,7 @@
 
 
 
-# 🤖 AgencyBench: Benchmarking the Agentic Intelligence of LLMs
+# 🤖 AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
 
 <div align="center">
 
@@ -48,26 +48,36 @@ AgencyBench/
 ├── 📋 bench.txt                 # Original LaTeX specification
 ├── 📊 category.txt              # Subtask categorization
 └── 📁 AgencyBench/              # Task specifications and implementations
-    ├── 📄 Task1_C++_Console_Chat_System.json
-    ├── 📁 task1/workspace/      # C++ implementation workspace
-    ├── 📄 Task2_Java_Console_Task_Manager.json
-    ├── 📁 task2/workspace/      # Java implementation workspace
-    ├── 📄 Task3_Gomoku_Battle_From_Basics_to_Expert_AI.json
-    ├── 📁 task3/workspace/      # Web game implementation workspace
-    ├── 📄 Task4_From_Deterministic_Event_Generation_to_Autonomous_Self-Repair.json
-    ├── 📁 task4/workspace/      # Python systems implementation workspace
-    ├── 📄 Task5_Comparing_LLM_Performance_on_DynToM_Dataset.json
-    ├── 📁 task5/workspace/      # Research analysis workspace
-    ├── 📄 Task6_Reasoning_vs_Direct_A_Comparative_Study_of_GPT-4o_and_GPT-4o-Reasoning.json
-    ├── 📁 task6/workspace/      # Comparative study workspace
-    ├── 📄 Task7_Three-Stage_Dataset_Discovery_and_Metadata_Extraction.json
-    ├── 📁 task7/workspace/      # Dataset discovery workspace
-    ├── 📄 Task8_Scientific_System_Function_Discovery.json
-    ├── 📁 task8/workspace/      # Scientific modeling workspace
-    ├── 📄 Task9_Complex_NBA_Player_Trade_and_Achievement_Scenarios.json
-    ├── 📁 task9/workspace/      # Sports analysis workspace
-    ├── 📄 Task10_Major_S&P_500_Companies_with_Record_Revenues_and_Leadership.json
-    └── 📁 task10/workspace/     # Financial analysis workspace
+    ├── 📁 task1/               # C++ Console Chat System
+    │   ├── 📄 Task1_C++_Console_Chat_System.json
+    │   └── 📁 workspace/       # C++ implementation workspace
+    ├── 📁 task2/               # Java Console Task Manager
+    │   ├── 📄 Task2_Java_Console_Task_Manager.json
+    │   └── 📁 workspace/       # Java implementation workspace
+    ├── 📁 task3/               # Gomoku Battle Game
+    │   ├── 📄 Task3_Gomoku_Battle_From_Basics_to_Expert_AI.json
+    │   └── 📁 workspace/       # Web game implementation workspace
+    ├── 📁 task4/               # Autonomous Self-Repair System
+    │   ├── 📄 Task4_From_Deterministic_Event_Generation_to_Autonomous_Self-Repair.json
+    │   └── 📁 workspace/       # Python systems implementation workspace
+    ├── 📁 task5/               # DynToM Dataset Analysis
+    │   ├── 📄 Task5_Comparing_LLM_Performance_on_DynToM_Dataset.json
+    │   └── 📁 workspace/       # Research analysis workspace
+    ├── 📁 task6/               # GPT-4o Comparative Study
+    │   ├── 📄 Task6_Reasoning_vs_Direct_A_Comparative_Study_of_GPT-4o_and_GPT-4o-Reasoning.json
+    │   └── 📁 workspace/       # Comparative study workspace
+    ├── 📁 task7/               # Dataset Discovery System
+    │   ├── 📄 Task7_Three-Stage_Dataset_Discovery_and_Metadata_Extraction.json
+    │   └── 📁 workspace/       # Dataset discovery workspace
+    ├── 📁 task8/               # Scientific System Function Discovery
+    │   ├── 📄 Task8_Scientific_System_Function_Discovery.json
+    │   └── 📁 workspace/       # Scientific modeling workspace
+    ├── 📁 task9/               # NBA Player Analysis
+    │   ├── 📄 Task9_Complex_NBA_Player_Trade_and_Achievement_Scenarios.json
+    │   └── 📁 workspace/       # Sports analysis workspace
+    └── 📁 task10/              # S&P 500 Companies Analysis
+        ├── 📄 Task10_Major_S&P_500_Companies_with_Record_Revenues_and_Leadership.json
+        └── 📁 workspace/       # Financial analysis workspace
 ```
 
 ## 🚀 Getting Started
@@ -106,32 +116,9 @@ Each JSON task file contains:
 | **Total Categories** | **25** |
 | **Total Subtasks** | **49** |
 
-## 🔗 Resources
 
-### 🌐 Website
-*Coming soon* - Official AgencyBench website with interactive leaderboards and detailed results
 
-### 📄 Paper
-*Coming soon* - Comprehensive research paper detailing benchmark design, evaluation methodology, and baseline results
-
-## 🤝 Contributing
-
-We welcome contributions to AgencyBench! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details on how to:
-
-- 📝 Submit new tasks or improvements
-- 🐛 Report bugs and issues
-- 💡 Suggest new features
-- 📋 Add evaluation metrics
-
-## 📊 Evaluation Methodology
-
-AgencyBench employs a comprehensive evaluation framework designed to assess both effectiveness and efficiency of agentic intelligence across diverse real-world scenarios.
-
-### 🎯 Evaluation Dataset
-
-We utilize a carefully curated evaluation subset containing **10 representative queries** from our comprehensive task pool. This framework enables direct measurement of models' performance on scenarios that mirror the complexity and collaborative nature of real-world agentic tasks.
-
-### 📏 Evaluation Metrics
+## 📊 Evaluation Metrics
 
 Our evaluation employs **four key metrics** that capture both effectiveness and efficiency dimensions:
 
@@ -162,6 +149,16 @@ These metrics collectively provide a comprehensive assessment framework that eva
 > 🏅 **Claude Sonnet-4** achieves state-of-the-art performance across all metrics, demonstrating superior agentic intelligence capabilities.
 
 *Results are based on comprehensive evaluation across all 10 AgencyBench domains with R=3 rounds maximum.*
+
+
+
+## 🔗 Resources
+
+### 🌐 Website
+*Coming soon* - Official AgencyBench website with interactive leaderboards and detailed results
+
+### 📄 Paper
+*Coming soon* - Comprehensive research paper detailing benchmark design, evaluation methodology, and baseline results
 
 ## 📜 License
 
