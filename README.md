@@ -5,7 +5,9 @@
 
 <div align="center">
 
-# <img src="agencybench.png" alt="AgencyBench" width="72" height="72" style="vertical-align: middle; margin-right: 8px;"> AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
+<img src="agencybench.png" alt="AgencyBench" width="96" height="96">
+
+# AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
 
 [![Website](https://img.shields.io/badge/🌐_Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/📄_Paper-arXiv_Coming_Soon-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
@@ -139,6 +141,7 @@ These metrics collectively provide a comprehensive assessment framework that eva
 | **Organization** | **Model** | **FTFC** | **RC** | **SR** |
 |------------------|-----------|----------|--------|--------|
 |  **Anthropic** | 🥇 **claude-sonnet-4** | **0.730** | **0.752** | **0.741** |
+|  **GAIR** | 🥇 **LIMI** | **0.717** | **0.742** | **0.746** |
 |  **OpenAI** | 🥈 **gpt-5** | 0.561 | 0.594 | 0.628 |
 |  **Zhipu AI** | 🥉 **GLM 4.5** | 0.378 | 0.500 | 0.474 |
 |  **Qwen** | **qwen3-235b-a22b-2507** | 0.230 | 0.282 | 0.313 |
@@ -146,6 +149,7 @@ These metrics collectively provide a comprehensive assessment framework that eva
 |  **DeepSeek** | **deepseek-chat-v3.1** | 0.106 | 0.119 | 0.133 |
 
 > 🏅 **Claude Sonnet-4** achieves state-of-the-art performance across all metrics, demonstrating superior agentic intelligence capabilities.
+> We use sii-cli as the scaffold to evaluate.
 
 *Results are based on comprehensive evaluation across all 10 AgencyBench domains with R=3 rounds maximum.*
 
