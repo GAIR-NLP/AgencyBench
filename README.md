@@ -5,7 +5,7 @@
 
 <div align="center">
 
-# <img src="agencybench.png" alt="AgencyBench" width="24" height="24" style="vertical-align: middle; margin-right: 8px;"> AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
+# <img src="agencybench.png" alt="AgencyBench" width="72" height="72" style="vertical-align: middle; margin-right: 8px;"> AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
 
 [![Website](https://img.shields.io/badge/🌐_Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/📄_Paper-arXiv_Coming_Soon-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
