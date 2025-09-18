@@ -5,7 +5,7 @@
 
 <div align="center">
 
-# 🤖 AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
+# ![AgencyBench](AgencyBench/agencybench.png) AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
 
 [![Website](https://img.shields.io/badge/🌐_Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/📄_Paper-arXiv_Coming_Soon-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
