@@ -7,7 +7,7 @@
 
 # 🤖 AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
 
-[![Website](https://img.shields.io/badge/🌐_Website-Coming_Soon-blue?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
+[![Website](https://img.shields.io/badge/🌐_Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/📄_Paper-arXiv_Coming_Soon-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
 [![License](https://img.shields.io/badge/📜_License-MIT-green?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/GAIR-NLP/AgencyBench?style=for-the-badge&logo=github)](https://github.com/GAIR-NLP/AgencyBench/stargazers)
@@ -20,7 +20,7 @@ AgencyBench is a comprehensive benchmark designed to evaluate the agentic intell
 
 - **[2025/09]** 🎉 AgencyBench is released! 49 challenging subtasks across 10 domains
 - **[2025/09]** 📊 Benchmark evaluation framework and baseline results coming soon
-- **[2025/09]** 🌐 Official website and leaderboard under development
+- **[2025/09]** 🌐 Official website and leaderboard now available at agencybench.opensii.ai
 
 ## 🎯 What is AgencyBench?
 
@@ -154,7 +154,7 @@ These metrics collectively provide a comprehensive assessment framework that eva
 ## 🔗 Resources
 
 ### 🌐 Website
-*Coming soon* - Official AgencyBench website with interactive leaderboards and detailed results
+[**agencybench.opensii.ai**](https://agencybench.opensii.ai) - Official AgencyBench website with interactive leaderboards and detailed results
 
 ### 📄 Paper
 *Coming soon* - Comprehensive research paper detailing benchmark design, evaluation methodology, and baseline results
