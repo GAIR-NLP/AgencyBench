@@ -5,6 +5,8 @@
 
 <div align="center">
 
+<img src="sii.png" alt="SII" width="96" height="96">
+<img src="asi.png" alt="ASI" width="96" height="96">
 <img src="agencybench.png" alt="AgencyBench" width="96" height="96">
 
 # AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
