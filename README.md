@@ -194,8 +194,6 @@ If you use AgencyBench in your research, please cite:
 }
 ```
 
----
 
-<div align="center">
-Made with ❤️ by the GAIR-NLP Team
-</div>
+
+
