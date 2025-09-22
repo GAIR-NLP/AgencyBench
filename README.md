@@ -187,7 +187,7 @@ If you use AgencyBench in your research, please cite:
 @misc{li2025agencybench,
   title={AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios},
   author={Keyu Li and Mohan Jiang and Yang Xiao and Jie Sun and Jifan Lin and Yumin Zhuang and Ji Zeng and Shijie Xia and Qishuo Hua
-  and Xuefeng Li and Xiaojie Cai and Dequan Wang and Wenjie Li and Xiang Wang and Pengfei Liu},
+  and Xuefeng Li and Xiaojie Cai and Wenjie Li and Xiang Wang and Dequan Wang and Pengfei Liu},
   year={2025},
   howpublished={\url{https://github.com/GAIR-NLP/AgencyBench}},
   note={Github Repo}
