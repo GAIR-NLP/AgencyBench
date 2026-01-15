@@ -1,0 +1,17 @@
+serper_api_key: 
+
+# agent_model_name: qwen/qwen-2.5-72b-instruct:free
+agent_model:
+  name: gpt-4.1
+  api_key: 
+  base_url: 
+  provider:
+  api_version: 
+
+# web_browsing_model_name: qwen/qwen-2.5-72b-instruct:free
+web_browsing_model:
+  name: gpt-4.1-mini
+  api_key: 
+  base_url: 
+  provider: 
+  api_version: 

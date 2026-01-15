@@ -1,0 +1,6 @@
+{
+    "domain": "x > 0",
+    "latex": "$$f(x) = 12.06 - 0.95 x^{3}$$",
+    "code": "f(x) = 12.06 - 0.95*x**3",
+    "id": "isobench/math/convexity_208"
+}

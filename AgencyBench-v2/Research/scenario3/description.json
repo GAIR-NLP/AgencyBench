@@ -1,0 +1,43 @@
+{
+  "subtask_count": 5,
+  "subtask1": {
+    "query": "Use public disclosures through September 2025 to identify the Fortune 500 (2023) top-10 S&P 500 company that matches the rubric criteria. Provide the required revenue comparison and CEO background in English prose without embedding any presumed answer in the prompt.",
+    "deliverables": [
+      "Markdown file `subtask1_findings.md` summarizing the selected company, the required services-revenue comparison, and the CEO background per the rubric criteria.",
+      "Plain-text file `subtask1_answer.txt` containing only the chosen company name."
+    ],
+    "rubric": "- Score 10: Correctly identifies UnitedHealth Group, cites Optum (its technology-enabled health services platform) fiscal 2023 revenue (~$226B) significantly exceeding The Walt Disney Company's total fiscal 2023 revenue (~$88.9B), references Sir Andrew Witty's appointment as CEO (March 2021) and his prior leadership at GlaxoSmithKline, anchoring claims to annual reports.\n- Score 5: Names UnitedHealth Group but omits the Optum vs. Disney comparison or the CEO's specific prior company background.\n- Score 0: Provides any company other than UnitedHealth Group or lacks revenue evidence tied to real-world filings."
+  },
+  "subtask2": {
+    "query": "Using official disclosures and standard rankings (through September 2025), determine the Fortune 500 (2023) top-150 S&P 500 company described in the rubric. Compile the rubric-defined revenue comparison, location footprint, and CEO career details without baking in any specific answer hints.",
+    "deliverables": [
+      "Report `subtask2_analysis.md` covering the company selection, FY2023 revenue versus the rubric comparator, HQ/operations footprint, and CEO milestones as required.",
+      "Table `subtask2_evidence.csv` with columns `metric`, `value`, `source`, capturing the revenue and leadership datapoints used."
+    ],
+    "rubric": "- Score 10: Correctly concludes Broadcom Inc., notes FY2023 net revenue (~$35.8B) exceeding Salesforce's FY2024 revenue (~$34.9B), confirms the San Jose-based HQ with a major operational hub in Singapore (legacy Avago), and documents Hock Tan's prior executive roles (e.g., at Integrated Circuit Systems or Commodore) and his MIT/Harvard education. All statements must link to publicly reported facts.\n- Score 5: Names Broadcom but misses either the Salesforce revenue comparison or the Singapore operational context.\n- Score 0: Misidentifies the company (e.g., confuses with Qualcomm) or fabricates revenue figures."
+  },
+  "subtask3": {
+    "query": "From the public FY2023 results, identify the Fortune 500 (2023) top-50 S&P 500 financial institution in scope. Present the rubric-required revenue comparison and executive background without embedding any implied answer.",
+    "deliverables": [
+      "Narrative memo `subtask3_memo.md` detailing the company choice, required revenue comparison, executive biography, and education per the rubric.",
+      "Citation list `subtask3_sources.txt` enumerating URLs/documents supporting each assertion."
+    ],
+    "rubric": "- Score 10: Accurately identifies Citigroup, documents 2023 total revenue (~$78B) surpassing Goldman Sachs (~$46B), states that Jane Fraser became CEO in March 2021 as the first female CEO of a major Wall Street bank, and verifies her Harvard Business School (MBA) credentials.\n- Score 5: Gives Citigroup but lacks one piece of corroboration (revenue comparison or education) or deviates from reported numbers by >5%.\n- Score 0: Names the wrong institution (e.g., JPMorgan or Bank of America) or omits revenue evidence."
+  },
+  "subtask4": {
+    "query": "Using official releases through September 2025, identify the NYSE-listed international EV-focused company described by the rubric. Provide the required strategic partnership comparison and founder background without hinting at the answer.",
+    "deliverables": [
+      "Brief `subtask4_summary.md` covering the company identity, the required strategic investment detail, and the founder's entrepreneurial history per the rubric.",
+      "JSON file `subtask4_metrics.json` containing keys `company`, `strategic_partner`, `investment_amount`, `founder_prior_startup`."
+    ],
+    "rubric": "- Score 10: Correctly identifies XPeng Inc., cites the official 2023/2024 agreement where the Volkswagen Group invested approximately $700 million for a stake in the company (a distinct milestone compared to Nio or Li Auto), mentions founder He Xiaopeng's background as the co-founder of UCWeb, and sources these facts.\n- Score 5: Provides XPeng Inc. but lacks the specific detail about the Volkswagen investment amount or the founder's UCWeb history.\n- Score 0: Selects another company (e.g., Nio) or fails to link the Volkswagen partnership to the correct entity."
+  },
+  "subtask5": {
+    "query": "Compile a consolidated dossier for the four companies identified in subtasks 1–4, focusing on revenue scale, leadership appointments, and operational highlights per the rubric, using public data through September 2025. Avoid embedding any predetermined answers in the prompt.",
+    "deliverables": [
+      "Spreadsheet `subtask5_summary.csv` with one row for each company identified in subtasks 1–4 and columns `company`, `core_business`, `2023_revenue_approx`, `key_executive`, `key_milestone_or_fact`, `primary_source`.",
+      "Executive overview `subtask5_overview.md` synthesizing the comparative insights and explicitly confirming that each entry matches the validated findings from subtasks 1–4."
+    ],
+    "rubric": "- Score 10: Table lists all four correct companies (UnitedHealth Group, Broadcom, Citigroup, XPeng) with accurate revenue figures (within 2% of official filings), correct key executives (Witty, Tan, Fraser, He), and distinct facts (Optum scale, Singapore hub, First female CEO/Rev vs Goldman, VW investment). Overview references primary sources.\n- Score 5: Includes all four companies but contains numeric errors (>5%) or misses the specific 'key milestone' requested in previous subtasks.\n- Score 0: Omits any of the four companies or introduces unverified entities."
+  }
+}

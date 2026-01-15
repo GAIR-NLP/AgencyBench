@@ -1,0 +1,80 @@
+{
+  "attempt_limit": 2,
+  "score_threshold": 0.5,
+  "subtasks": [
+    {
+      "index": 1,
+      "name": "subtask1",
+      "base_commit": "6ebf49a9b840e4663495816179322547274a83b0",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "attempt_dir": "claude-4.5-opus/workspace/subtask1/attempt1",
+          "repo_path": "claude-4.5-opus/autogen",
+          "patch_file": "claude-4.5-opus/workspace/subtask1/attempt1/patch_1.diff",
+          "diff_lines": 269,
+          "judge_score": 0.0,
+          "judge_comment": "Complete functional mismatch - AI patch implements documentation and vector database improvements instead of the required GitHub Actions workflow for automatic issue labeling.",
+          "judge_raw": {
+            "id": "chatcmpl-f7258854-ff6d-41a0-abd7-fa8d939d63fe",
+            "created": 1765354872,
+            "model": "anthropic/claude-sonnet-4",
+            "object": "chat.completion",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "Looking at the original GitHub PR patch and the AI-generated patch, I need to evaluate whether they achieve the same functional effect.\n\nThe **original patch** creates a simple GitHub Actions workflow that automatically labels issues with \"needs-triage\" when they are opened or reopened.\n\nThe **AI-generated patch** makes extensive changes to:\n1. CI workflow configuration (adding Qdrant tests)\n2. ChromaDB compatibility fixes \n3. Documentation updates in notebooks\n4. Installation guide improvements\n5. Vector database support documentation\n\nThese are completely different functionalities. The original patch is about issue labeling automation, while the AI patch addresses repository enhancements for documentation clarity and vector storage capabilities.\n\nKey problems with the AI-generated patch:\n\n1. **Complete functional mismatch**: The AI patch doesn't implement any issue labeling functionality\n2. **Wrong file modifications**: The AI modifies existing files instead of creating the new workflow file `.github/workflows/label-issues.yml` that the original patch creates\n3. **Missing core requirement**: No GitHub Actions workflow for automatic issue labeling\n4. **Unrelated changes**: All modifications are related to documentation and vector database support, not issue management\n\nThe AI patch appears to have confused the user query description with the actual GitHub PR patch requirements. While the individual changes in the AI patch might be valid improvements, they don't address the core functionality of automatically labeling issues.\n\n```json\n{\n  \"score\": 0.0,\n  \"comment\": \"Complete functional mismatch - AI patch implements documentation and vector database improvements instead of the required GitHub Actions workflow for automatic issue labeling.\"\n}\n```",
+                  "role": "assistant"
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 357,
+              "prompt_tokens": 5244,
+              "total_tokens": 5601
+            }
+          },
+          "judge_result_file": "claude-4.5-opus/workspace/subtask1/attempt1/judge_result.json",
+          "status": "retry"
+        },
+        {
+          "attempt_index": 2,
+          "attempt_dir": "claude-4.5-opus/workspace/subtask1/attempt2",
+          "repo_path": "claude-4.5-opus/autogen",
+          "patch_file": "claude-4.5-opus/workspace/subtask1/attempt2/patch_1.diff",
+          "diff_lines": 0,
+          "judge_score": 0.0,
+          "judge_comment": "The AI-generated patch is completely empty, providing no implementation whatsoever. The ground truth shows a GitHub Actions workflow for automatically labeling issues with 'needs-triage' when they are opened or reopened, but the AI patch contains no code, configuration, or any attempt to address the requirements.",
+          "judge_raw": {
+            "id": "chatcmpl-dc9f080d-b03d-47e6-b0e0-fced7428bedc",
+            "created": 1765354965,
+            "model": "anthropic/claude-sonnet-4",
+            "object": "chat.completion",
+            "choices": [
+              {
+                "finish_reason": "stop",
+                "index": 0,
+                "message": {
+                  "content": "{\n  \"score\": 0.0,\n  \"comment\": \"The AI-generated patch is completely empty, providing no implementation whatsoever. The ground truth shows a GitHub Actions workflow for automatically labeling issues with 'needs-triage' when they are opened or reopened, but the AI patch contains no code, configuration, or any attempt to address the requirements.\"\n}",
+                  "role": "assistant"
+                }
+              }
+            ],
+            "usage": {
+              "completion_tokens": 85,
+              "prompt_tokens": 1255,
+              "total_tokens": 1340
+            }
+          },
+          "judge_result_file": "claude-4.5-opus/workspace/subtask1/attempt2/judge_result.json",
+          "status": "retry"
+        }
+      ],
+      "success": false,
+      "final_score": 0.0
+    }
+  ],
+  "repo_path": "claude-4.5-opus/autogen"
+}

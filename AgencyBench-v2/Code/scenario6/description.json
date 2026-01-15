@@ -1,0 +1,4 @@
+{
+  "subtask_count": 1,
+  "subtask1": "Query\nYou are a helpful assistant tasked with discovering mathematical function structures for scientific systems. You must work only inside the dedicated `workspace` folder created under your model-specific run directory. Modify the `equation.py` function, considering the physical meaning and relationships of inputs.\nYou can modify the `analysis.py` to observe the data, where the data is a list of shape (samples_size * elements).\nYou can run the `evaluate_equation.py` file to observe the loss on training data. The objective is to minimize the loss, preferably to a value less than 1e-7. Record the results in JSON format in subtask1_result.json, which must include three keys: loss, equation, and comment, recording the optimized loss value, the optimized equation, and a brief summary comment, respectively."
+}

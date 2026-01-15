@@ -1,0 +1,6 @@
+{
+    "domain": "x > 0",
+    "latex": "$$f(x) = - 1.02 \\log{\\left(x \\right)} - 8.59$$",
+    "code": "f(x) = -1.02*log(x) - 8.59",
+    "id": "isobench/math/convexity_78"
+}

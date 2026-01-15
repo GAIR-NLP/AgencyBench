@@ -1,0 +1,39 @@
+{
+  "attempt_limit": 1,
+  "loss_thresholds": [
+    1e-07,
+    1e-05,
+    1e-07,
+    1e-09,
+    1e-11
+  ],
+  "best_loss": null,
+  "final_score": 0,
+  "model_root": "task30/claude-4.5-opus",
+  "workspace_template": "task30/workspace",
+  "workspace": "task30/claude-4.5-opus/workspace",
+  "subtasks": [
+    {
+      "subtask": "subtask1",
+      "threshold": 1e-07,
+      "success": false,
+      "total_attempts": 1,
+      "result_file": "task30/claude-4.5-opus/workspace/subtask1_result.json",
+      "attempts": [
+        {
+          "attempt_index": 1,
+          "success": false,
+          "loss": null,
+          "equation": null,
+          "comment": null,
+          "threshold": 1e-07,
+          "file_detected": false,
+          "parsed": false,
+          "notes": "subtask1_result.json missing after attempt.",
+          "result_path": "task30/claude-4.5-opus/workspace/subtask1_result.json"
+        }
+      ],
+      "note": "subtask1_result.json missing after attempt."
+    }
+  ]
+}

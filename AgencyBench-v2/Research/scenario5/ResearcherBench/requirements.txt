@@ -1,0 +1,8 @@
+openai>=1.93.0
+httpx>=0.24.0
+aiofiles>=23.0.0
+pyyaml>=6.0
+pandas>=1.5.0
+numpy>=1.24.0
+matplotlib>=3.6.0
+seaborn>=0.12.0

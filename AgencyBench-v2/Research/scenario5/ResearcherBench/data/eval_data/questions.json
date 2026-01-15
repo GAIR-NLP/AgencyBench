@@ -1,0 +1,392 @@
+[
+    {
+        "id": 1,
+        "question": "In specific domains, such as healthcare, using large language models (LLMs) in combination with Retrieval-Augmented Generation (RAG) can effectively reduce hallucinations, while attribution can provide valid citation evidence for the generated answers, making it easier for subsequent evaluation and validation. A method was attempted where GPT-4 was used to generate data, followed by fine-tuning the LLM using supervised fine-tuning (SFT) to directly produce answers and attributions. It was observed that for simple questions (single citation), the model performs well, but for more complex questions, the model's performance declines. After investigating, it was found that the generated dataset primarily contained simple questions, and the citation accuracy of GPT-4 itself is low (around 75%). How can high-quality data be generated to improve performance on complex questions?",
+        "category": "Open Consulting",
+        "Subject": "Synthetic Data"
+    },
+    {
+        "id": 2,
+        "question": "What are the potential directions and opportunities for improving the inference capabilities of large models in the presence of DeepSeek R1? Will RL-based methods become the mainstream approach? Can the reward model combined with tree search for Chain-of-Thought (CoT) fine-tuning be discarded? Given the existence of DeepSeek R1, how much potential remains for further research and improvement in large model reasoning capabilities? Will reinforcement learning (RL)-based methods become the dominant approach? Can post-training for chain-of-thought (CoT) reasoning using reward models and tree search be entirely abandoned?",
+        "category": "Open Consulting",
+        "Subject": "Reasoning and Inference"
+    },
+    {
+        "id": 3,
+        "question": "In multimodal pretraining, the current mainstream paradigms are based on image tokens and stable diffusion. Analyzing the latest advancements (by April 2025) in these two technical approaches, with reference to the most recent papers, which one appears to be more promising and why?",
+        "category": "Literature Review",
+        "Subject": "Computer Vision"
+    },
+    {
+        "id": 4,
+        "question": "Please analyze the differences between the LIMO and S1 these two papers. Provide a detailed comparison, considering aspects such as their research objectives, methodologies, key findings, and overall contributions.",
+        "category": "Technical Details",
+        "Subject": "AI for Science"
+    },
+    {
+        "id": 5,
+        "question": "How do DeepSeek's successive releases of V3 and the open-source large model R1 influence the current development trends of large models? What insights do they provide for developers?",
+        "category": "Open Consulting",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 6,
+        "question": "Compare the Transformer and Mamba model architectures, analyzing their performance and technical characteristics in different application scenarios. Based on the latest research, discuss the advantages and disadvantages of both models and their applicable scenarios.",
+        "category": "Literature Review",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 7,
+        "question": "Why can models trained on synthetic data outperform the models that provide the synthetic data? Please find the latest research papers that provide evidence to support this claim.",
+        "category": "Literature Review",
+        "Subject": "Synthetic Data"
+    },
+    {
+        "id": 8,
+        "question": "\"Complex Instruction\" is an instruction that involves multiple tasks with various constraints, including requirements on the output’s format, content, style, or an instruction paired with intricate input data, such as long contexts or noisy, heterogeneous information. How to effectively improve large models' understanding and adherence to complex instructions in task-oriented QA problems? Please provide a strategy for constructing such SFT samples or example prompts, clearly describing the design rationale and implementation details.",
+        "category": "Open Consulting",
+        "Subject": "Instruction Following"
+    },
+    {
+        "id": 9,
+        "question": "What is the fundamental reason behind the low cost of DeepSeek V3? Is it due to leveraging data distillation from other \"teacher models\" (such as OpenAI, Gemini, etc.), or adjustments in training and inference precision algorithms?",
+        "category": "Technical Details",
+        "Subject": "Model Training and Optimization"
+    },
+    {
+        "id": 10,
+        "question": "What are the specific differences between the two major RL designs behind DeepMind and OpenAI? Both DeepMind and OpenAI have made significant achievements in deep reinforcement learning, but by analyzing some tutorial details from David Silver and Sergey Levine, I feel that their understanding and implementation of RL have quite different approaches. Is there a more in-depth comparison of these two RL research institutions?",
+        "category": "Literature Review",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 11,
+        "question": "How can research on an agent's planning capabilities, as well as an AI's understanding and simulation of the real world—including improvements in visual perception—be systematically approached? Please outline key research directions and trends in this field, referencing relevant academic papers.",
+        "category": "Literature Review",
+        "Subject": "Embodied AI"
+    },
+    {
+        "id": 12,
+        "question": "When conducting instruction fine-tuning for large models, how can the diversity of the fine-tuning dataset be balanced with task-specific relevance to ensure that the model maintains generalization ability while excelling in specific tasks? For example, if a large amount of SQL-generated data is included, will it affect the model's performance in general question-answering scenarios? How can such issues be addressed?",
+        "category": "Open Consulting",
+        "Subject": "Model Training/Fine-tuning"
+    },
+    {
+        "id": 13,
+        "question": "Why doesn't ChatGPT directly fine-tune using Reward-Model data, but instead use RLHF? Give me a more deep technical report, and focus on references to recent research papers on this topic.",
+        "category": "Technical Details",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 14,
+        "question": "How can we improve large language models' effectiveness on long text reasoning tasks (such as fact extraction and summarization) and avoid the phenomenon where key information is easily overlooked in long contexts? Answer from the perspectives of model architecture, training methods, inference strategies, and model evaluation.",
+        "category": "Technical Details",
+        "Subject": "Reasoning and Inference"
+    },
+    {
+        "id": 15,
+        "question": "What are the differences and connections between the supervised fine-tuning, value alignment of Large Multi-Modal Models (LMMs), and pure text-based Large Language Models (LLMs)?",
+        "category": "Technical Details",
+        "Subject": "Multimodal AI"
+    },
+    {
+        "id": 16,
+        "question": "For complex reasoning tasks (e.g., tasks involving multiple citations or extended reasoning chains), what are the strengths of current agent technologies, and what are their limitations? Please analyze this in the context of research since June 2024.",
+        "category": "Literature Review",
+        "Subject": "AI Agents"
+    },
+    {
+        "id": 17,
+        "question": "With the lowered entry barrier for foundational large models, how can we more quickly apply these models to vertical domain scenarios? There are currently two technical approaches: the first is to build a chain-of-thought corpus tailored to the vertical domain and fine-tune the foundational large model to enhance its understanding of the specific domain; the second is to strengthen the isolation and automatic optimization between prompts and software by constructing a robust external information retrieval system (RAG). How should we choose between these two approaches?",
+        "category": "Open Consulting",
+        "Subject": "Model Training/Fine-tuning"
+    },
+    {
+        "id": 18,
+        "question": "In the context of downstream SFT (Supervised Fine-Tuning) task for generative models, training data often contain a large number of domain-specific high-frequency words, which may cause the model to unintentionally generate these words frequently during prediction. How can we design strategies at the algorithmic level to mitigate or resolve this issue?",
+        "category": "Literature Review",
+        "Subject": "Model Training/Fine-tuning"
+    },
+    {
+        "id": 19,
+        "question": "How to understand the role of FFNs in Transformers?",
+        "category": "Technical Details",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 20,
+        "question": "Mixture of Experts (MOE) architecture usually first train a powerful general model and then use multiple LoRA (Low-Rank Adaptation) modules in a hot-swappable manner for specific task training. Compare the performance with traditional dense models and, based on relevant research papers, analyze how to combine the strengths of both approaches.",
+        "category": "Technical Details",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 21,
+        "question": "Is AI actually a general purpose technology?",
+        "category": "Open Consulting",
+        "Subject": "AI Policy"
+    },
+    {
+        "id": 22,
+        "question": "How would you advise a big nation to think about the AI stack (chips, compute, models, applications)... and how would you advise someone that's a smaller Nation differently?",
+        "category": "Open Consulting",
+        "Subject": "AI Policy"
+    },
+    {
+        "id": 23,
+        "question": "How might the development of 'molecular psychology' through advanced neurochemical manipulation reshape our understanding of both human consciousness and machine intelligence?",
+        "category": "Open Consulting",
+        "Subject": "Cognitive Science"
+    },
+    {
+        "id": 24,
+        "question": "How might the relationship between web standards and creative expression evolve if AI agents can automatically adapt experiences across different presentation layers (DOM, 3D, AR)?",
+        "category": "Open Consulting",
+        "Subject": "Human-Computer Interaction"
+    },
+    {
+        "id": 25,
+        "question": "Could reinforcement learning techniques developed for large models be effectively applied to smaller models, or does distillation from larger systems remain superior?",
+        "category": "Open Consulting",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 26,
+        "question": "Do we expect a different set of benchmarks for evaluating AI models as we shift from scale-up to scale-out paradigms, or should we focus entirely on the app layer?",
+        "category": "Open Consulting",
+        "Subject": "LLM Evaluation"
+    },
+    {
+        "id": 27,
+        "question": "If the lesson of DeepSeek isn’t a 'Sputnik moment' but rather an 'internet moment,' how should policymakers radically rethink AI governance to avoid repeating historical regulatory failures?",
+        "category": "Open Consulting",
+        "Subject": "AI Policy"
+    },
+    {
+        "id": 28,
+        "question": "How might the proliferation of permissively licensed, reasoning-step-revealing models like DeepSeek R1 fundamentally alter the economics of AI application development?",
+        "category": "Open Consulting",
+        "Subject": "AI Economics"
+    },
+    {
+        "id": 29,
+        "question": "What unrecognized parallels exist between the architectural philosophy of TCP/IP (best-effort delivery enabling new applications) and emerging AI model paradigms that embrace imperfection?",
+        "category": "Open Consulting",
+        "Subject": "Computer Networks"
+    },
+    {
+        "id": 30,
+        "question": "Can Enterprises build better domain-specific models with their data, or will large general models always outperform them?",
+        "category": "Open Consulting",
+        "Subject": "AI Strategy"
+    },
+    {
+        "id": 31,
+        "question": "What are the specific technological/policy challenges in maintaining AI leadership while avoiding self-harm through overregulation?",
+        "category": "Open Consulting",
+        "Subject": "AI Policy"
+    },
+    {
+        "id": 32,
+        "question": "How do you see AI 'getting better' - what does 'better' mean when correctness isn't the primary metric?",
+        "category": "Open Consulting",
+        "Subject": "LLM Evaluation"
+    },
+    {
+        "id": 33,
+        "question": "Why choose a general model approach over domain-specific solutions, given the industry trend toward narrow AI applications?",
+        "category": "Open Consulting",
+        "Subject": "AI Strategy"
+    },
+    {
+        "id": 34,
+        "question": "What new types of 'creative infrastructure' does the web need to support AI-generated 3D/immersive experiences while maintaining open standards?",
+        "category": "Open Consulting",
+        "Subject": "Virtual Reality"
+    },
+    {
+        "id": 35,
+        "question": "How do you reconcile the potential for AI agents to expand productivity and labor capabilities with concerns about companies exploiting this technology to ruthlessly cut workforces?",
+        "category": "Open Consulting",
+        "Subject": "AI Ethics"
+    },
+    {
+        "id": 36,
+        "question": "What fundamental architectural differences between Salesforce's agent approach and large language model wrappers like Co-Pilot ensure both security and actionable business value?",
+        "category": "Technical Details",
+        "Subject": "AI Agent"
+    },
+    {
+        "id": 37,
+        "question": "Can AI models continue to scale when you add more compute, data, and power? Are we seeing diminishing returns?",
+        "category": "Open Consulting",
+        "Subject": "Scaling Laws"
+    },
+    {
+        "id": 38,
+        "question": "Does AI's ability to generate physically coherent videos indicate progress in understanding the physical world, or is it just pattern matching?",
+        "category": "Open Consulting",
+        "Subject": "Reasoning and Inference"
+    },
+    {
+        "id": 39,
+        "question": "Could the self-play mechanisms that mastered games like Dota 2 and StarCraft be adapted to accelerate scientific discovery in fields like physics or biology?",
+        "category": "Open Consulting",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 40,
+        "question": "What fundamental architectural innovations are needed to enable neural networks to maintain lifelong learning capabilities without catastrophic forgetting?",
+        "category": "Open Consulting",
+        "Subject": "Lifelong Learning"
+    },
+    {
+        "id": 41,
+        "question": "Could transformer architectures be fundamentally reimagined to process multimodal inputs (video/audio/text) with the same efficiency they process text?",
+        "category": "Open Consulting",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 42,
+        "question": "How might federated learning combined with model distillation techniques overcome both technical and legal barriers in sensitive domains like healthcare?",
+        "category": "Open Consulting",
+        "Subject": "Federated Learning"
+    },
+    {
+        "id": 43,
+        "question": "What overlooked system architecture challenges need solving to fully realize AI's potential across cloud and edge computing?",
+        "category": "Literature Review",
+        "Subject": "AI Infrastructure"
+    },
+    {
+        "id": 44,
+        "question": "What would a 'PhD-level' AI capability look like in practice, and how might that force us to re-evaluate our current educational accreditation systems?",
+        "category": "Open Consulting",
+        "Subject": "AI and Education"
+    },
+    {
+        "id": 45,
+        "question": "What is MCP (Model Context Protocol)? How does it address the data connectivity challenges in LLM applications, and what are the differences compared to Function Calling and AI Agents?",
+        "category": "Literature Review",
+        "Subject": "LLM Integration"
+    },
+    {
+        "id": 46,
+        "question": "How should the development of generative AI evolve: focusing on dialogue-based systems (Chat) or autonomous action-taking systems (Agent)? What are the key differences, technological requirements, and future implications of each approach?",
+        "category": "Open Consulting",
+        "Subject": "AI Strategy"
+    },
+    {
+        "id": 47,
+        "question": "How can we optimize large language model alignment: from RLHF to RLAIF, to better leverage pretrained models' potential and align with human preferences?",
+        "category": "Literature Review",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 48,
+        "question": "What is Disaggregated Inference? How does it solve the KV Cache storage management problems in LLM inference, and what are the key innovations in architectures like MemServe and Mooncake?",
+        "category": "Technical Details",
+        "Subject": "Distributed Systems"
+    },
+    {
+        "id": 49,
+        "question": "From a technical perspective, how to understand the similarities and differences between Reinforcement Learning (RL) algorithms and Supervised Fine-Tuning (SFT) in Large Language Models (LLMs), as well as their respective advantages and disadvantages in model training?",
+        "category": "Literature Review",
+        "Subject": "Reinforcement Learning"
+    },
+    {
+        "id": 50,
+        "question": "How does DeepSpeed solve the memory challenges in large language model training, and what are the key techniques it employs for distributed training of trillion-parameter models?",
+        "category": "Technical Details",
+        "Subject": "Distributed Systems"
+    },
+    {
+        "id": 51,
+        "question": "What is the conceptual difference between Mixture of Experts (MoE) in Large Language Models versus traditional recommendation systems, and why do LLMs process tokens rather than entire sentences through individual experts?",
+        "category": "Literature Review",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 52,
+        "question": "How has RAG technology evolved in 2024, and what are the key technical innovations that addressed its major pain points?",
+        "category": "Literature Review",
+        "Subject": "Retrieval-Augmented Generation"
+    },
+    {
+        "id": 53,
+        "question": "How is RAG (Retrieval-Augmented Generation) evolving, and what evidence suggests it will remain a core LLM enhancement technology rather than becoming obsolete?",
+        "category": "Open Consulting",
+        "Subject": "Retrieval-Augmented Generation"
+    },
+    {
+        "id": 54,
+        "question": "How have scaling laws evolved in large language models from GPT-3 to O3, and what does this tell us about the future direction of AI research?",
+        "category": "Open Consulting",
+        "Subject": "Scaling Laws"
+    },
+    {
+        "id": 55,
+        "question": "Why has the Transformer architecture become the dominant foundation for large language models (LLMs), and what fundamental advantages does it have over alternative architectures like RNNs and LSTMs?",
+        "category": "Literature Review",
+        "Subject": "Model Architecture"
+    },
+    {
+        "id": 56,
+        "question": "What are the architectural advantages of Transformer models over CNNs for computer vision tasks, and what evidence suggests they could eventually become the dominant architecture for visual processing?",
+        "category": "Literature Review",
+        "Subject": "Computer Vision"
+    },
+    {
+        "id": 57,
+        "question": "What is the evolution path of multimodal models from early visual representations to current multimodal large language models, and what are the key technological breakthroughs along this journey?",
+        "category": "Literature Review",
+        "Subject": "Multimodal AI"
+    },
+    {
+        "id": 58,
+        "question": "What are the technical aspects and implementation challenges of fine-tuning Large Language Models, and how do techniques like LoRA address these challenges?",
+        "category": "Literature Review",
+        "Subject": "Model Training/Fine-tuning"
+    },
+    {
+        "id": 59,
+        "question": "What is Artificial General Intelligence (AGI), how far are we from achieving it, and what societal transformations might it trigger upon its arrival?",
+        "category": "Open Consulting",
+        "Subject": "AI Ethics"
+    },
+    {
+        "id": 60,
+        "question": "How can multi-modal models effectively overcome the challenge of aligning different modalities like text and images while preserving the strengths of each modality?",
+        "category": "Technical Details",
+        "Subject": "Multimodal AI"
+    },
+    {
+        "id": 61,
+        "question": "How can the hallucination problem in large models be addressed from the perspective of knowledge boundaries? What effective techniques can help models accurately express their knowledge boundaries when encountering unknown knowledge?",
+        "category": "Literature Review",
+        "Subject": "Hallucination"
+    },
+    {
+        "id": 62,
+        "question": "How can we effectively detect hallucinations in large language models by utilizing their internal states, and what advantages does this approach offer over external detection methods?",
+        "category": "Literature Review",
+        "Subject": "Model Interpretability"
+    },
+    {
+        "id": 63,
+        "question": "What is \"extrinsic hallucination\" in large language models? How does it differ from intrinsic hallucinations in the context, and what are the main methods to reduce type of hallucination?",
+        "category": "Literature Review",
+        "Subject": "Model Reliability"
+    },
+    {
+        "id": 64,
+        "question": "How can organizations effectively implement and scale generative AI according to McKinsey's research, and what key strategies should executives prioritize to maximize value while managing risks?",
+        "category": "Technical Details",
+        "Subject": "AI Strategy"
+    },
+    {
+        "id": 65,
+        "question": "How should knowledge graphs evolve in the era of Large Language Models? What are their complementary roles and future directions?",
+        "category": "Open Consulting",
+        "Subject": "Knowledge Graph"
+    }
+]

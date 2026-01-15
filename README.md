@@ -1,201 +1,208 @@
-
-
-
-
-
 <div align="center">
 
 <img src="assets/sii.png" alt="SII" width="96" height="96">
 <img src="assets/asi.png" alt="ASI" width="96" height="96">
 <img src="assets/agencybench.png" alt="AgencyBench" width="96" height="96">
 
-# AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios
+# AGENCYBENCH: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts
 
-[![Website](https://img.shields.io/badge/🌐_Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
-[![Paper](https://img.shields.io/badge/📄_Paper-arXiv_Coming_Soon-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
-[![License](https://img.shields.io/badge/📜_License-MIT-green?style=for-the-badge)](LICENSE)
+[![Website](https://img.shields.io/badge/Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
+[![Paper](https://img.shields.io/badge/Paper-PDF%20%26%20Repo-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/GAIR-NLP/AgencyBench?style=for-the-badge&logo=github)](https://github.com/GAIR-NLP/AgencyBench/stargazers)
 
 </div>
 
-AgencyBench is a comprehensive benchmark designed to evaluate the agentic intelligence capabilities of Large Language Models (LLMs). This benchmark tests LLMs across diverse domains and complexity levels, measuring their ability to function as autonomous agents capable of planning, executing, and adapting in complex multi-step scenarios.
+This repository contains **AgencyBench-v2**, an automated evaluation suite for **long-horizon, real-world agent tasks** across **32 scenarios** and **138 tasks**. It includes scenario workspaces, evaluators, and end-to-end metadata logging to `meta_eval.json`.
+
+## Abstract
+
+Large Language Models (LLMs) based autonomous agents demonstrate multifaceted capabilities to contribute substantially to economic production. However, existing benchmarks remain focused on single agentic capability, failing to capture long-horizon real-world scenarios. Moreover, the reliance on human-in-the-loop feedback for realistic tasks creates a scalability bottleneck, hindering automated rollout collection and evaluation. To bridge this gap, we introduce **AGENCYBENCH**, a comprehensive benchmark derived from daily AI usage, evaluating **6 core agentic capabilities** across **32 real-world scenarios**, comprising **138 tasks** with specific queries, deliverables, and rubrics. These scenarios require an average of **90 tool calls**, **1 million tokens**, and hours of execution time to resolve. To enable automated evaluation, we employ a user simulation agent to provide iterative feedback, and a Docker sandbox to conduct visual and functional rubric-based assessment. Experiments reveal that closed-source models significantly outperform open-source models (48.4% vs 32.1%). Further analysis reveals significant disparities across models in resource efficiency, feedback-driven self-correction, and specific tool-use preferences. Finally, we investigate the impact of agentic scaffolds, observing that proprietary models demonstrate superior performance within their native ecosystems, while open-source models exhibit distinct performance peaks, suggesting potential optimization for specific execution frameworks.
 
 ## 🔥 Recent News
 
-- **[2025/09]** 🎉 AgencyBench is released! 49 challenging subtasks across 10 domains
-- **[2025/09]** 📊 Benchmark evaluation framework and baseline results coming soon
-- **[2025/09]** 🌐 Official website and leaderboard now available at agencybench.opensii.ai
-
-## 🎯 What is AgencyBench?
-
-AgencyBench evaluates LLMs through **10 distinct tasks** spanning multiple domains including:
-
-- 💻 **Software Engineering**: C++ console applications, Java task management systems
-- 🎮 **Game Development**: Advanced AI for strategic games like Gomoku
-- ⚙️ **Systems Programming**: Distributed systems, fault tolerance, and self-repair mechanisms
-- 🔬 **Research & Analysis**: Dataset discovery, scientific modeling, performance evaluation
-- 🧠 **Knowledge Reasoning**: Complex fact-based question answering in sports and finance domains
-
-Each task contains multiple progressive subtasks (**49 total**) that increase in complexity, testing various aspects of agentic behavior such as:
-
-- 🎯 Multi-step reasoning and planning
-- 💡 Code generation and system implementation
-- 📊 Data analysis and scientific computation
-- 🔍 Complex information retrieval and synthesis
-- 🤖 Autonomous problem-solving and adaptation
+- **[2026/01]** Open-sourced **AgencyBench-v2** with website and paper.
 
 ## 🏗️ Project Structure
 
 ```
-AgencyBench/
-├── 📄 README.md                 # Project documentation
-├── 📋 bench.txt                 # Original LaTeX specification
-├── 📊 category.txt              # Subtask categorization
-└── 📁 AgencyBench/              # Task specifications and implementations
-    ├── 📁 task1/               # C++ Console Chat System
-    │   ├── 📄 Task1_C++_Console_Chat_System.json
-    │   └── 📁 workspace/       # C++ implementation workspace
-    ├── 📁 task2/               # Java Console Task Manager
-    │   ├── 📄 Task2_Java_Console_Task_Manager.json
-    │   └── 📁 workspace/       # Java implementation workspace
-    ├── 📁 task3/               # Gomoku Battle Game
-    │   ├── 📄 Task3_Gomoku_Battle_From_Basics_to_Expert_AI.json
-    │   └── 📁 workspace/       # Web game implementation workspace
-    ├── 📁 task4/               # Autonomous Self-Repair System
-    │   ├── 📄 Task4_From_Deterministic_Event_Generation_to_Autonomous_Self-Repair.json
-    │   └── 📁 workspace/       # Python systems implementation workspace
-    ├── 📁 task5/               # DynToM Dataset Analysis
-    │   ├── 📄 Task5_Comparing_LLM_Performance_on_DynToM_Dataset.json
-    │   └── 📁 workspace/       # Research analysis workspace
-    ├── 📁 task6/               # GPT-4o Comparative Study
-    │   ├── 📄 Task6_Reasoning_vs_Direct_A_Comparative_Study_of_GPT-4o_and_GPT-4o-Reasoning.json
-    │   └── 📁 workspace/       # Comparative study workspace
-    ├── 📁 task7/               # Dataset Discovery System
-    │   ├── 📄 Task7_Three-Stage_Dataset_Discovery_and_Metadata_Extraction.json
-    │   └── 📁 workspace/       # Dataset discovery workspace
-    ├── 📁 task8/               # Scientific System Function Discovery
-    │   ├── 📄 Task8_Scientific_System_Function_Discovery.json
-    │   └── 📁 workspace/       # Scientific modeling workspace
-    ├── 📁 task9/               # NBA Player Analysis
-    │   ├── 📄 Task9_Complex_NBA_Player_Trade_and_Achievement_Scenarios.json
-    │   └── 📁 workspace/       # Sports analysis workspace
-    └── 📁 task10/              # S&P 500 Companies Analysis
-        ├── 📄 Task10_Major_S&P_500_Companies_with_Record_Revenues_and_Leadership.json
-        └── 📁 workspace/       # Financial analysis workspace
+AgencyBench-v2/
+├── Backend/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── Code/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── Frontend/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── Game/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── Research/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── MCP/
+│   └── scenario*/
+│       ├── .env
+│       ├── description.json
+│       ├── eval_task.py
+│       └── claude/meta_eval.json
+├── assets/                # Logos and paper figures used by this README
+├── AgencyBench_v2_0.pdf   # Paper PDF (v2.0)
+├── requirements.txt       # Python dependencies
+└── README_ref.md          # README formatting reference
 ```
+
+Each `*/scenario*/` folder contains:
+
+- `.env`: scenario configuration (scaffold + API + evaluator keys, sandbox URL, attempt limits, etc.).
+- `description.json`: task specification (subtasks, deliverables, rubrics).
+- `eval_task.py`: runner that performs rollout + automated evaluation and writes `meta_eval.json`.
+- `workspace/` (when present): a clean template workspace copied into the model run directory.
+- `claude/`: a **demo run** containing `meta_eval.json` as an example.
+
+## 📚 Scenarios Overview
+
+### Backend (3)
+
+- `Backend/scenario1`: Build a C++ console chat app with auth, friends, chat history/search, and concurrency-safe messaging.
+- `Backend/scenario2`: Build a Java CLI task manager with per-user persistence, filtering/search, archiving, and concurrency-safe storage.
+- `Backend/scenario3`: Build a Python systems pipeline (event generator, transactional KV store, orchestrator, planner, self-repair).
+
+### Code (9)
+
+- `Code/scenario1`: Fit interpretable reaction-rate equations by editing `equation.py` and minimizing MSE on provided data.
+- `Code/scenario2`: Improve docs and add Qdrant vector-store support, plus ChromaDB compatibility fixes and CI updates.
+- `Code/scenario3`: Improve docs and add Qdrant vector-store support, plus ChromaDB compatibility fixes and CI updates.
+- `Code/scenario4`: Build a math-reasoning pipeline across graph/geometry/convexity datasets using solvers + GPT-4o explanations.
+- `Code/scenario5`: Implement a deep-research agent scaffold (planning, search, evidence, synthesis) with strict model/tool contracts.
+- `Code/scenario6`: Discover a scientific equation in a constrained workspace and report loss + formula in a strict JSON file.
+- `Code/scenario7`: Discover a scientific equation in a constrained workspace and report loss + formula in a strict JSON file.
+- `Code/scenario8`: Build a FastAPI + MongoDB GitHub webhook service with session tracking, event processing, and logging.
+- `Code/scenario9`: Build a Docker-sandboxed code agent workflow (repo cloning, PR creation) plus a monitoring dashboard.
+
+### Frontend (3)
+
+- `Frontend/scenario1`: Build an interactive USA SVG map launch view with clickable states and evaluation-friendly DOM hooks.
+- `Frontend/scenario2`: Build a responsive portrait “Square Fit” stage UI with strict layout constraints and visible target region.
+- `Frontend/scenario3`: Build a 3D solar system landing view with synchronized 3D/2D panels and a planet menu.
+
+### Game (10)
+
+- `Game/scenario1`: Build a browser Gomoku game with move logic, win detection, replay, persistence, and diagnostics.
+- `Game/scenario2`: Build a browser 2048 game with slide mechanics, scoring, win/loss logic, persistence, and diagnostics.
+- `Game/scenario3`: Build a browser Snake game with keyboard controls, scoring, persistence, and evaluation diagnostics.
+- `Game/scenario4`: Build a browser Tic-Tac-Toe game with turn logic, win detection, persistence, and diagnostics.
+- `Game/scenario5`: Build a browser Minesweeper game with cell interaction, HUD, persistence, and evaluation diagnostics.
+- `Game/scenario6`: Build a browser Lianliankan (tile matching) game with path rules, persistence, and diagnostics.
+- `Game/scenario7`: Build a browser Jump-a-Jump game with press-to-charge controls, persistence, and diagnostics.
+- `Game/scenario8`: Build a browser Flappy Bird game with physics, controls, persistence, and evaluation diagnostics.
+- `Game/scenario9`: Build a browser Sudoku game with input tooling, puzzle handling, persistence, and diagnostics.
+- `Game/scenario10`: Build a browser Fruit Ninja game with slicing interactions, scoring, persistence, and diagnostics.
+
+### Research (5)
+
+- `Research/scenario1`: Discover datasets on Hugging Face, extract README + samples, and produce schema-validated metadata files.
+- `Research/scenario2`: Answer multi-hop NBA identity questions with citations and produce a consolidated JSON verification report.
+- `Research/scenario3`: Identify public-company targets via filings and comparisons, backed by citations and summary tables.
+- `Research/scenario4`: Research “Chat vs Agent” with web evidence, write a structured report, and score via rubric recall.
+- `Research/scenario5`: Research planning/simulation for agents with web evidence, write a structured report, and score via recall.
+
+### MCP (2)
+
+- `MCP/scenario1`: Use GitHub MCP to create an issue/branch/PR and add a structured bug report issue template.
+- `MCP/scenario2`: Reorganize a workspace by migrating `.py/.csv/.md` assets into a new hierarchy with strict rules and cleanup.
+
+## ✨ Why AgencyBench?
+
+AgencyBench targets **frontiers of autonomous agents** by focusing on **real-world, long-horizon** workflows:
+
+- **Long context & long horizon**: tasks often require ~**1M tokens** and ~**90** tool calls with hours of execution.
+- **Diverse capabilities**: covers 6 core agentic capabilities spanning **Game / Frontend / Backend / Code / Research / MCP**.
+- **Automated evaluation at scale**: combines a **user simulation agent** (iterative feedback) with a **Docker sandbox** (visual + functional rubric checks).
+- **Rubric-based scoring**: integrates **rule-based judges**, **vision-based judges**, and **LLM-as-judge** where appropriate.
+
+<p align="center">
+  <img src="assets/paper/figure1_overview.png" alt="Figure 1: Overview of AGENCYBENCH" width="780">
+</p>
+
+<p align="center">
+  <img src="assets/paper/table1_main_results.png" alt="Table 1: Main experimental results" width="780">
+</p>
 
 ## 🚀 Getting Started
 
-### Quick Start
+### 1) Environment Setup
+
+Create (or reuse) a conda environment and install Python dependencies:
 
 ```bash
-git clone https://github.com/GAIR-NLP/AgencyBench.git
-cd AgencyBench
+conda create -n agencybench python=3.11
+conda activate agencybench
+pip install -r requirements.txt
 ```
 
-### Task Format
+### 2) Start the Docker Sandbox (Game + Frontend)
 
-Each JSON task file contains:
-- `metadata`: Task statistics including subtask count and associated capability categories
-- `query`: Clean text description of the task requirements
+Game and Frontend scenarios rely on a Docker-based remote sandbox for UI/visual evaluation:
 
-```json
-{
-  "metadata": {
-    "subtask_count": 5,
-    "categories": ["User Authentication & Data Persistence", "Social/Graph Feature Implementation", ...]
-  },
-  "query": "Task description with requirements and success criteria..."
-}
+```bash
+docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 ghcr.io/agent-infra/sandbox:latest
 ```
 
-## 📈 Benchmark Statistics
+Make sure the scenario `.env` contains `SANDBOX_BASE_URL=http://localhost:8080`.
 
-| Category | Subtasks |
-|----------|----------|
-| Complex Fact-Based Q&A (Sports/Finance) | 8 |
-| Scientific Model/Equation Refinement | 5 |
-| Performance Metric Calculation | 4 |
-| Dataset Discovery & Metadata Extraction | 3 |
-| **Total Categories** | **25** |
-| **Total Subtasks** | **49** |
+### 3) Run a Scenario
 
+1. Enter a scenario folder (e.g., `Backend/scenario1`).
+2. Fill out the scenario `.env` (scaffold config + evaluated model API config + evaluator model config).
+3. Run the evaluator:
 
+```bash
+cd Backend/scenario1
+source .env
+export SII_ENABLE_DATA_UPLOAD=false
+python eval_task.py
+```
 
-## 📊 Evaluation Metrics
+Optional: use `python eval_task.py --visualize` to watch the automated evaluation process (game and frontend: mouse events, screen interactions, screenshots, ...).
 
-Our evaluation employs **four key metrics** that capture both effectiveness and efficiency dimensions:
+### 4) Outputs
 
-- **🎯 First-Turn Functional Completeness (FTFC)**: Measures the percentage of requirements correctly implemented in the initial response, assessing the model's ability to understand and address complex specifications without iteration
+Running `eval_task.py` creates a **model-named run directory** inside the scenario folder (derived from `SII_TARGET_MODEL`). The directory contains intermediate artifacts and a final `meta_eval.json` that records the evaluation details and score.
 
-- **✅ Success Rate (SR@R)**: Represents the percentage of queries successfully completed within R allocated rounds, indicating overall reliability and robustness across diverse scenarios
-
-- **⚡ Remaining Chances (RC@R)**: Calculates the average number of unused rounds when queries are successfully completed, measuring computational efficiency and resource optimization
-
-- **🔄 Rounds (R)**: Defines the maximum number of interaction rounds allocated for query completion (R=3 in our implementation)
-
-These metrics collectively provide a comprehensive assessment framework that evaluates both the effectiveness of query completion and the efficiency of resource utilization.
-
-## 🏆 Leaderboard
-
-### 🥇 Official Results (R=3)
-
-| **Organization** | **Model** | **FTFC** | **RC** | **SR** |
-|------------------|-----------|----------|--------|--------|
-|  **Anthropic** | 🥇 **claude-sonnet-4** | **0.730** | **0.752** | **0.741** |
-|  **GAIR** | 🥇 **LIMI** | **0.717** | **0.742** | **0.746** |
-|  **OpenAI** | 🥈 **gpt-5** | 0.561 | 0.594 | 0.628 |
-|  **Zhipu AI** | 🥉 **GLM 4.5** | 0.378 | 0.500 | 0.474 |
-|  **Qwen** | **qwen3-235b-a22b-2507** | 0.230 | 0.282 | 0.313 |
-|  **MoonShot** | **kimi-k2(0711)** | 0.207 | 0.251 | 0.266 |
-|  **DeepSeek** | **deepseek-chat-v3.1** | 0.106 | 0.119 | 0.133 |
-
-> 🏅 **Claude Sonnet-4** achieves state-of-the-art performance across all metrics, demonstrating superior agentic intelligence capabilities.
-> We use sii-cli as the scaffold to evaluate.
-
-*Results are based on comprehensive evaluation across all 10 AgencyBench domains with R=3 rounds maximum.*
-
-
-
-## 🔗 Resources
-
-### 🌐 Website
-[**agencybench.opensii.ai**](https://agencybench.opensii.ai) - Official AgencyBench website with interactive leaderboards and detailed results
-
-### 📄 Paper
-*Coming soon* - Comprehensive research paper detailing benchmark design, evaluation methodology, and baseline results
-
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Each scenario includes a `claude/` folder with a sample `meta_eval.json` as a reference.
 
 ## ⭐ Star History
 
-<div align="center">
-<i>Star history will be available once the repository is public</i>
-</div>
-
-## 🙏 Acknowledgments
-
-We thank the open-source community and all contributors who helped make AgencyBench possible.
+[![Star History Chart](https://api.star-history.com/svg?repos=GAIR-NLP/AgencyBench&type=Date)](https://star-history.com/#GAIR-NLP/AgencyBench&Date)
 
 ## 📖 Citation
 
 If you use AgencyBench in your research, please cite:
 
 ```bibtex
-@misc{li2025agencybench,
-  title={AgencyBench: Benchmarking the Agentic Intelligence in Real-world Scenarios},
-  author={Keyu Li and Mohan Jiang and Yang Xiao and Jie Sun and Jifan Lin and Yumin Zhuang and Ji Zeng and Shijie Xia and Qishuo Hua
-  and Xuefeng Li and Xiaojie Cai and Wenjie Li and Xiang Wang and Dequan Wang and Pengfei Liu},
-  year={2025},
-  howpublished={\url{https://github.com/GAIR-NLP/AgencyBench}},
-  note={Github Repo}
+@misc{li2026agencybench,
+  title        = {AGENCYBENCH: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts},
+  author       = {Keyu Li and Junhao Shi and Yang Xiao and Mohan Jiang and Jie Sun and Yunze Wu and Dayuan Fu and Shijie Xia and Xiaojie Cai and Tianze Xu and Weiye Si and Wenjie Li and Dequan Wang and Pengfei Liu},
+  year         = {2026},
+  howpublished = {\\url{https://agencybench.opensii.ai}},
+  note         = {Paper PDF: AgencyBench_v2_0.pdf}
 }
 ```
-
-
-
-
-
-

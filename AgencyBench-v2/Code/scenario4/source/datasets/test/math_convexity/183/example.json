@@ -1,0 +1,6 @@
+{
+    "domain": null,
+    "latex": "$$f(x) = 2.44 - e^{0.92 x}$$",
+    "code": "f(x) = 2.44 - exp(0.92*x)",
+    "id": "isobench/math/convexity_250"
+}
