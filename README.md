@@ -166,13 +166,13 @@ Each `*/scenario*/` folder contains:
 
 ## 📚 Scenarios Overview
 
-### Backend (3)
+### Back-end Development (3)
 
 - `Backend/scenario1`: Build a C++ console chat app with auth, friends, chat history/search, and concurrency-safe messaging.
 - `Backend/scenario2`: Build a Java CLI task manager with per-user persistence, filtering/search, archiving, and concurrency-safe storage.
 - `Backend/scenario3`: Build a Python systems pipeline (event generator, transactional KV store, orchestrator, planner, self-repair).
 
-### Code (9)
+### Code Development / Debugging (9)
 
 - `Code/scenario1`: Fit interpretable reaction-rate equations by editing `equation.py` and minimizing MSE on provided data.
 - `Code/scenario2`: Improve docs and add Qdrant vector-store support, plus ChromaDB compatibility fixes and CI updates.
@@ -184,13 +184,13 @@ Each `*/scenario*/` folder contains:
 - `Code/scenario8`: Build a FastAPI + MongoDB GitHub webhook service with session tracking, event processing, and logging.
 - `Code/scenario9`: Build a Docker-sandboxed code agent workflow (repo cloning, PR creation) plus a monitoring dashboard.
 
-### Frontend (3)
+### Front-end Development (3)
 
 - `Frontend/scenario1`: Build an interactive USA SVG map launch view with clickable states and evaluation-friendly DOM hooks.
 - `Frontend/scenario2`: Build a responsive portrait “Square Fit” stage UI with strict layout constraints and visible target region.
 - `Frontend/scenario3`: Build a 3D solar system landing view with synchronized 3D/2D panels and a planet menu.
 
-### Game (10)
+### Game Development (10)
 
 - `Game/scenario1`: Build a browser Gomoku game with move logic, win detection, replay, persistence, and diagnostics.
 - `Game/scenario2`: Build a browser 2048 game with slide mechanics, scoring, win/loss logic, persistence, and diagnostics.
@@ -203,7 +203,7 @@ Each `*/scenario*/` folder contains:
 - `Game/scenario9`: Build a browser Sudoku game with input tooling, puzzle handling, persistence, and diagnostics.
 - `Game/scenario10`: Build a browser Fruit Ninja game with slicing interactions, scoring, persistence, and diagnostics.
 
-### Research (5)
+### Deep Research (5)
 
 - `Research/scenario1`: Discover datasets on Hugging Face, extract README + samples, and produce schema-validated metadata files.
 - `Research/scenario2`: Answer multi-hop NBA identity questions with citations and produce a consolidated JSON verification report.
@@ -211,7 +211,7 @@ Each `*/scenario*/` folder contains:
 - `Research/scenario4`: Research “Chat vs Agent” with web evidence, write a structured report, and score via rubric recall.
 - `Research/scenario5`: Research planning/simulation for agents with web evidence, write a structured report, and score via recall.
 
-### MCP (2)
+### Model Context Protocol Tool (MCP) Use (2)
 
 - `MCP/scenario1`: Use GitHub MCP to create an issue/branch/PR and add a structured bug report issue template.
 - `MCP/scenario2`: Reorganize a workspace by migrating `.py/.csv/.md` assets into a new hierarchy with strict rules and cleanup.
