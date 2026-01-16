@@ -48,15 +48,16 @@ AgencyBench targets **frontiers of autonomous agents** by focusing on **real-wor
   <img src="assets/paper/efficiency.png" alt="Figure 4: Efficiency results" width="780">
 </p>
 
-For tasks that previously relied heavily on human evaluation—especially UI-centric Frontend workloads and interactive Game development—we run a Docker-based remote VM sandbox and follow a rubric-driven evaluation procedure to make the process fully automated and visualizable. When launching the evaluation script, the system automatically boots the remote VM and renders it locally, then opens the locally generated deliverables (e.g., frontend code) in the remote browser. The script proceeds to execute human-like tools and actions—mouse clicks, keyboard input, command-line operations, screenshots, and screen recording—while saving and syncing the evaluation artifacts back to the local machine.
+For tasks that previously relied heavily on human evaluation—especially UI-centric Frontend workloads and interactive Game development—we run a Docker-based remote VM sandbox and follow a rubric-driven evaluation procedure to **make the evaluation process fully automated and visualizable**. When launching the evaluation script, the system automatically boots the remote VM and renders it locally, then opens the locally generated deliverables (e.g., frontend code) in the remote browser. The script proceeds to execute human-like tools and actions—mouse clicks, keyboard input, command-line operations, screenshots, and screen recording—while saving and syncing the evaluation artifacts back to the local machine.
 
 <p align="center">
-  <a href="assets/paper/t3.mp4">t3.mp4</a> · <a href="assets/paper/t5.mp4">t5.mp4</a>
+  <img src="assets/paper/t3.gif" alt="t3 demo (GIF)" width="780">
 </p>
 
 <p align="center">
-  <img src="assets/paper/evalation.png" alt="Illustrative evaluation scenario (Game + Frontend)" width="1040" height="728">
+  <img src="assets/paper/t5.gif" alt="t5 demo (GIF)" width="780">
 </p>
+
 
 
 
