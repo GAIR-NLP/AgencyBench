@@ -13,7 +13,6 @@
 
 </div>
 
-This repository contains **AgencyBench-v2**, an automated evaluation suite for **long-horizon, real-world agent tasks** across **32 scenarios** and **138 tasks**. It includes scenario workspaces, evaluators, and end-to-end metadata logging to `meta_eval.json`.
 
 ## Abstract
 
@@ -21,7 +20,97 @@ Large Language Models (LLMs) based autonomous agents demonstrate multifaceted ca
 
 ## 🔥 Recent News
 
-- **[2026/01]** Open-sourced **AgencyBench-v2** with website and paper.
+- **[2026/01]** 🚀 Open-sourced **AgencyBench-v2** with website and paper, containing 6 agentic capabilities, 32 real-world long-horizon scenarios and 138 apecific tasks, with detailed queries, rubrics, deliverables and evaluation scripts.
+
+- **[2025/09]** 🎺 Open-sourced **AgencyBench-v1** with 10 tasks.
+
+
+
+## ✨ Why AgencyBench?
+
+AgencyBench targets **frontiers of autonomous agents** by focusing on **real-world, long-horizon** workflows:
+
+- **Long context & long horizon**: tasks often require ~**1M tokens** and ~**90** tool calls with hours of execution.
+- **Diverse capabilities**: covers 6 core agentic capabilities spanning **Game / Frontend / Backend / Code / Research / MCP**.
+- **Automated evaluation at scale**: combines a **user simulation agent** (iterative feedback) with a **Docker sandbox** (visual + functional rubric checks).
+- **Rubric-based scoring**: integrates **rule-based judges**, **vision-based judges**, and **LLM-as-judge** where appropriate.
+4
+<p align="center">
+  <img src="assets/paper/teaser.png" alt="Figure 1: Overview of AGENCYBENCH" width="780">
+</p>
+
+<p align="center">
+  <img src="assets/paper/main_result.png" alt="Table 1: Main experimental results" width="780">
+</p>
+
+<p align="center">
+  <img src="assets/paper/efficiency.png" alt="Figure 4: Efficiency results" width="780">
+</p>
+
+For tasks that previously relied heavily on human evaluation—especially UI-centric Frontend workloads and interactive Game development—we run a Docker-based remote VM sandbox and follow a rubric-driven evaluation procedure to make the process fully automated and visualizable. When launching the evaluation script, the system automatically boots the remote VM and renders it locally, then opens the locally generated deliverables (e.g., frontend code) in the remote browser. The script proceeds to execute human-like tools and actions—mouse clicks, keyboard input, command-line operations, screenshots, and screen recording—while saving and syncing the evaluation artifacts back to the local machine.
+
+<p align="center">
+  <video src="assets/paper/t3.webm" width="780" controls></video>
+</p>
+
+<p align="center">
+  <video src="assets/paper/t5.webm" width="780" controls></video>
+</p>
+
+<p align="center">
+  <img src="assets/paper/evalation.png" alt="Illustrative evaluation scenario (Game + Frontend)" width="1040" height="728">
+</p>
+
+
+
+
+
+
+
+## 🚀 Getting Started
+
+### 1) Environment Setup
+
+Create a conda environment and install Python dependencies:
+
+```bash
+conda create -n agencybench python=3.11
+conda activate agencybench
+pip install -r requirements.txt
+```
+
+### 2) Start the Docker Sandbox (Game + Frontend)
+
+Game and Frontend scenarios rely on a Docker-based remote sandbox for UI/visual evaluation:
+
+```bash
+docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 ghcr.io/agent-infra/sandbox:latest
+```
+
+Make sure the scenario `.env` contains `SANDBOX_BASE_URL=http://localhost:8080`.
+
+### 3) Run a Scenario
+
+1. Enter a scenario folder (e.g., `Backend/scenario1`).
+2. Fill out the scenario `.env` (scaffold config + evaluated model API config + text/vision evaluator model config + other hyperparameter config).
+3. Set environment variables and run the evaluation script:
+
+```bash
+cd Backend/scenario1
+source .env
+python eval_task.py
+```
+
+Optional: use `python eval_task.py --visualize` to watch the automated evaluation process (game and frontend: mouse events, screen interactions, screenshots, ...).
+
+### 4) Outputs
+
+Running `eval_task.py` creates a **model-named run directory** inside the scenario folder (derived from `SII_TARGET_MODEL`). The directory contains intermediate artifacts and a final `meta_eval.json` that records the evaluation details and score.
+
+Each scenario includes a `claude/` folder with a sample `meta_eval.json` as a reference.
+
+
+
 
 ## 🏗️ Project Structure
 
@@ -129,65 +218,6 @@ Each `*/scenario*/` folder contains:
 - `MCP/scenario1`: Use GitHub MCP to create an issue/branch/PR and add a structured bug report issue template.
 - `MCP/scenario2`: Reorganize a workspace by migrating `.py/.csv/.md` assets into a new hierarchy with strict rules and cleanup.
 
-## ✨ Why AgencyBench?
-
-AgencyBench targets **frontiers of autonomous agents** by focusing on **real-world, long-horizon** workflows:
-
-- **Long context & long horizon**: tasks often require ~**1M tokens** and ~**90** tool calls with hours of execution.
-- **Diverse capabilities**: covers 6 core agentic capabilities spanning **Game / Frontend / Backend / Code / Research / MCP**.
-- **Automated evaluation at scale**: combines a **user simulation agent** (iterative feedback) with a **Docker sandbox** (visual + functional rubric checks).
-- **Rubric-based scoring**: integrates **rule-based judges**, **vision-based judges**, and **LLM-as-judge** where appropriate.
-
-<p align="center">
-  <img src="assets/paper/figure1_overview.png" alt="Figure 1: Overview of AGENCYBENCH" width="780">
-</p>
-
-<p align="center">
-  <img src="assets/paper/table1_main_results.png" alt="Table 1: Main experimental results" width="780">
-</p>
-
-## 🚀 Getting Started
-
-### 1) Environment Setup
-
-Create (or reuse) a conda environment and install Python dependencies:
-
-```bash
-conda create -n agencybench python=3.11
-conda activate agencybench
-pip install -r requirements.txt
-```
-
-### 2) Start the Docker Sandbox (Game + Frontend)
-
-Game and Frontend scenarios rely on a Docker-based remote sandbox for UI/visual evaluation:
-
-```bash
-docker run --security-opt seccomp=unconfined --rm -it -p 8080:8080 ghcr.io/agent-infra/sandbox:latest
-```
-
-Make sure the scenario `.env` contains `SANDBOX_BASE_URL=http://localhost:8080`.
-
-### 3) Run a Scenario
-
-1. Enter a scenario folder (e.g., `Backend/scenario1`).
-2. Fill out the scenario `.env` (scaffold config + evaluated model API config + evaluator model config).
-3. Run the evaluator:
-
-```bash
-cd Backend/scenario1
-source .env
-export SII_ENABLE_DATA_UPLOAD=false
-python eval_task.py
-```
-
-Optional: use `python eval_task.py --visualize` to watch the automated evaluation process (game and frontend: mouse events, screen interactions, screenshots, ...).
-
-### 4) Outputs
-
-Running `eval_task.py` creates a **model-named run directory** inside the scenario folder (derived from `SII_TARGET_MODEL`). The directory contains intermediate artifacts and a final `meta_eval.json` that records the evaluation details and score.
-
-Each scenario includes a `claude/` folder with a sample `meta_eval.json` as a reference.
 
 ## ⭐ Star History
 
