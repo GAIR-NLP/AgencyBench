@@ -211,7 +211,7 @@ Each `*/scenario*/` folder contains:
 - `Research/scenario4`: Research “Chat vs Agent” with web evidence, write a structured report, and score via rubric recall.
 - `Research/scenario5`: Research planning/simulation for agents with web evidence, write a structured report, and score via recall.
 
-### Model Context Protocol Tool (MCP) Use (2)
+### Model Context Protocol (MCP) Tool Use (2)
 
 - `MCP/scenario1`: Use GitHub MCP to create an issue/branch/PR and add a structured bug report issue template.
 - `MCP/scenario2`: Reorganize a workspace by migrating `.py/.csv/.md` assets into a new hierarchy with strict rules and cleanup.
