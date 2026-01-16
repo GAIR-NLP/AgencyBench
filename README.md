@@ -4,7 +4,7 @@
 <img src="assets/asi.png" alt="ASI" width="96" height="96">
 <img src="assets/agencybench.png" alt="AgencyBench" width="96" height="96">
 
-# AGENCYBENCH: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts
+# AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts
 
 [![Website](https://img.shields.io/badge/Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/Paper-PDF%20%26%20Repo-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
@@ -16,7 +16,11 @@
 
 ## Abstract
 
-Large Language Models (LLMs) based autonomous agents demonstrate multifaceted capabilities to contribute substantially to economic production. However, existing benchmarks remain focused on single agentic capability, failing to capture long-horizon real-world scenarios. Moreover, the reliance on human-in-the-loop feedback for realistic tasks creates a scalability bottleneck, hindering automated rollout collection and evaluation. To bridge this gap, we introduce **AGENCYBENCH**, a comprehensive benchmark derived from daily AI usage, evaluating **6 core agentic capabilities** across **32 real-world scenarios**, comprising **138 tasks** with specific queries, deliverables, and rubrics. These scenarios require an average of **90 tool calls**, **1 million tokens**, and hours of execution time to resolve. To enable automated evaluation, we employ a user simulation agent to provide iterative feedback, and a Docker sandbox to conduct visual and functional rubric-based assessment. Experiments reveal that closed-source models significantly outperform open-source models (48.4% vs 32.1%). Further analysis reveals significant disparities across models in resource efficiency, feedback-driven self-correction, and specific tool-use preferences. Finally, we investigate the impact of agentic scaffolds, observing that proprietary models demonstrate superior performance within their native ecosystems, while open-source models exhibit distinct performance peaks, suggesting potential optimization for specific execution frameworks.
+Large Language Models (LLMs) based autonomous agents demonstrate multifaceted capabilities to contribute substantially to economic production. However, existing benchmarks remain focused on single agentic capability, failing to capture long-horizon real-world scenarios. Moreover, the reliance on human-in-the-loop feedback for realistic tasks creates a scalability bottleneck, hindering automated rollout collection and evaluation. To bridge this gap, we introduce **AgencyBench**, a comprehensive benchmark derived from daily AI usage, evaluating **6 core agentic capabilities** across **32 real-world scenarios**, comprising **138 tasks** with specific queries, deliverables, and rubrics. These scenarios require an average of **90 tool calls**, **1 million tokens**, and hours of execution time to resolve. To enable automated evaluation, we employ a user simulation agent to provide iterative feedback, and a Docker sandbox to conduct visual and functional rubric-based assessment. Experiments reveal that closed-source models significantly outperform open-source models (48.4% vs 32.1%). Further analysis reveals significant disparities across models in resource efficiency, feedback-driven self-correction, and specific tool-use preferences. Finally, we investigate the impact of agentic scaffolds, observing that proprietary models demonstrate superior performance within their native ecosystems, while open-source models exhibit distinct performance peaks, suggesting potential optimization for specific execution frameworks.
+
+<p align="center">
+  <img src="assets/paper/teaser.png" alt="Figure 1: Overview of AGENCYBENCH" width="780">
+</p>
 
 ## 🔥 Recent News
 
@@ -34,10 +38,7 @@ AgencyBench targets **frontiers of autonomous agents** by focusing on **real-wor
 - **Diverse capabilities**: covers 6 core agentic capabilities spanning **Game / Frontend / Backend / Code / Research / MCP**.
 - **Automated evaluation at scale**: combines a **user simulation agent** (iterative feedback) with a **Docker sandbox** (visual + functional rubric checks).
 - **Rubric-based scoring**: integrates **rule-based judges**, **vision-based judges**, and **LLM-as-judge** where appropriate.
-4
-<p align="center">
-  <img src="assets/paper/teaser.png" alt="Figure 1: Overview of AGENCYBENCH" width="780">
-</p>
+
 
 <p align="center">
   <img src="assets/paper/main_result.png" alt="Table 1: Main experimental results" width="780">
@@ -50,15 +51,11 @@ AgencyBench targets **frontiers of autonomous agents** by focusing on **real-wor
 For tasks that previously relied heavily on human evaluation—especially UI-centric Frontend workloads and interactive Game development—we run a Docker-based remote VM sandbox and follow a rubric-driven evaluation procedure to make the process fully automated and visualizable. When launching the evaluation script, the system automatically boots the remote VM and renders it locally, then opens the locally generated deliverables (e.g., frontend code) in the remote browser. The script proceeds to execute human-like tools and actions—mouse clicks, keyboard input, command-line operations, screenshots, and screen recording—while saving and syncing the evaluation artifacts back to the local machine.
 
 <p align="center">
-  <video src="assets/paper/t3.webm" width="780" controls></video>
+  <video src="assets/paper/t3.mp4" width="780" controls></video>
 </p>
 
 <p align="center">
-  <video src="assets/paper/t5.webm" width="780" controls></video>
-</p>
-
-<p align="center">
-  <img src="assets/paper/evalation.png" alt="Illustrative evaluation scenario (Game + Frontend)" width="1040" height="728">
+  <video src="assets/paper/t5.mp4" width="780" controls></video>
 </p>
 
 
