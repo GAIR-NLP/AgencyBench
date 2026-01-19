@@ -7,7 +7,7 @@
 # AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts
 
 [![Website](https://img.shields.io/badge/Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
-[![Paper](https://img.shields.io/badge/Paper-PDF%20%26%20Repo-red?style=for-the-badge)](https://github.com/GAIR-NLP/AgencyBench)
+[![Paper](https://img.shields.io/badge/Paper-PDF%20%26%20Repo-red?style=for-the-badge)](https://arxiv.org/abs/2601.11044)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/GAIR-NLP/AgencyBench?style=for-the-badge&logo=github)](https://github.com/GAIR-NLP/AgencyBench/stargazers)
 
