@@ -24,9 +24,9 @@ Large Language Models (LLMs) based autonomous agents demonstrate multifaceted ca
 
 ## 🔥 Recent News
 
-- **[2026/01]** 🚀 Open-sourced **AgencyBench-v2** with website and paper, containing 6 agentic capabilities, 32 real-world long-horizon scenarios and 138 apecific tasks, with detailed queries, rubrics, deliverables and evaluation scripts.
+- **[2026/01]** 🚀 Open-sourced **AgencyBench-V2** with website and paper, containing 6 agentic capabilities, 32 real-world long-horizon scenarios and 138 apecific tasks, with detailed queries, rubrics, deliverables and evaluation scripts.
 
-- **[2025/09]** 🎺 Open-sourced **AgencyBench-v1** with 10 tasks.
+- **[2025/09]** 🎺 Open-sourced **AgencyBench-V1** with 10 tasks.
 
 
 
@@ -226,11 +226,13 @@ Each `*/scenario*/` folder contains:
 If you use AgencyBench in your research, please cite:
 
 ```bibtex
-@misc{li2026agencybench,
-  title        = {AGENCYBENCH: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts},
-  author       = {Keyu Li and Junhao Shi and Yang Xiao and Mohan Jiang and Jie Sun and Yunze Wu and Dayuan Fu and Shijie Xia and Xiaojie Cai and Tianze Xu and Weiye Si and Wenjie Li and Dequan Wang and Pengfei Liu},
-  year         = {2026},
-  howpublished = {\\url{https://agencybench.opensii.ai}},
-  note         = {Paper PDF: AgencyBench_v2_0.pdf}
+@misc{li2026agencybenchbenchmarkingfrontiersautonomous,
+      title={AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts}, 
+      author={Keyu Li and Junhao Shi and Yang Xiao and Mohan Jiang and Jie Sun and Yunze Wu and Shijie Xia and Xiaojie Cai and Tianze Xu and Weiye Si and Wenjie Li and Dequan Wang and Pengfei Liu},
+      year={2026},
+      eprint={2601.11044},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2601.11044}, 
 }
 ```
