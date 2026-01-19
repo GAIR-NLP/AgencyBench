@@ -8,6 +8,7 @@
 
 [![Website](https://img.shields.io/badge/Website-agencybench.opensii.ai-blue?style=for-the-badge)](https://agencybench.opensii.ai)
 [![Paper](https://img.shields.io/badge/Paper-Arxiv-red?style=for-the-badge)](https://arxiv.org/abs/2601.11044)
+[![HuggingFace](https://img.shields.io/badge/HuggingFace-Dataset-yellow?style=for-the-badge&logo=huggingface&logoColor=black)](https://huggingface.co/datasets/GAIR/AgencyBench)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/GAIR-NLP/AgencyBench?style=for-the-badge&logo=github)](https://github.com/GAIR-NLP/AgencyBench/stargazers)
 
