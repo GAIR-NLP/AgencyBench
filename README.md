@@ -227,13 +227,10 @@ Each `*/scenario*/` folder contains:
 If you use AgencyBench in your research, please cite:
 
 ```bibtex
-@misc{li2026agencybenchbenchmarkingfrontiersautonomous,
-      title={AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts}, 
-      author={Keyu Li and Junhao Shi and Yang Xiao and Mohan Jiang and Jie Sun and Yunze Wu and Shijie Xia and Xiaojie Cai and Tianze Xu and Weiye Si and Wenjie Li and Dequan Wang and Pengfei Liu},
-      year={2026},
-      eprint={2601.11044},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2601.11044}, 
+@article{li2026agencybench,
+  title={AgencyBench: Benchmarking the Frontiers of Autonomous Agents in 1M-Token Real-World Contexts},
+  author={Li, Keyu and Shi, Junhao and Xiao, Yang and Jiang, Mohan and Sun, Jie and Wu, Yunze and Xia, Shijie and Cai, Xiaojie and Xu, Tianze and Si, Weiye and others},
+  journal={arXiv preprint arXiv:2601.11044},
+  year={2026}
 }
 ```
